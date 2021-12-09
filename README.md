@@ -37,20 +37,16 @@ Using machine learning to predict NBA matchps.
 
 1. Update the database
 
-1. Write schema and views to access data
+1. Write code to access data
 
-1. Link database with Python (likely using AWS), but open to exploring how to access PostgreSQL remotely
+1. Link database with Python (using AWS), but maybe postgreSQL if that is too tricky
 
 1. Index news data
 
 >**But if it doesn't work ...**[]
 1. We should be able to do this
 
-1. We should be able to do this
-
-1. We should be able to do this
-
-1. We can use CSV's, which is what I did in Project 1, but it would be nice to improve upon this
+1. We can use CSV's, which is what we did in Project 1, but it would be nice to improve upon this
 
 1. Don't use the news
 ---
@@ -58,7 +54,7 @@ Using machine learning to predict NBA matchps.
 
 **Primary Goal**
 
-Build a generalizable TensorFlow model that uses classification, regression or reinforcement learning to predict the outcome of NBA games and use Keras Tuner to optimize the hyperparameters for the neural net.
+TensorFlow model that uses classification or regression to predict the outcome of NBA games and use Keras Tuner to optimize the hyperparameters for the neural net.
 
 **Secondary Goal** 
 
