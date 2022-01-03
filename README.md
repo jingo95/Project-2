@@ -1,18 +1,15 @@
 # Predicting NBA All-Stars
 
 
-## Goal
+## Goal / Hypothesis
+An issue in the world of sports fandom is always predicting what may happen. For betters, analysts, etc. People tend to use the same statistics to predict future outcomes. However, when predicting the future, there are always outside factors that play into what may occur. 
+
 Our goal is to build a machine learning model that predicts the likelihood of an NBA player becoming an All-Star in the NBA. In order to become an All-Star starter  for the East or West teams, a player is selected by a weighted combination of fan, player and media voting (50%, 25% and 25% respectively). The reserves are chosen by a vote between the coaches. We will look to predict the probability that a draft eligible College Basketball player becomes an All-Star by analyzing which features of a player lead to future NBA success.
+
+
 
 ## Data Dictionary
 The majority of the data descriptions can be found [here](https://www.basketball-reference.com/about/glossary.html#mp) with the remainder on Bart Torvik's [site](https://www.bigtengeeks.com/new-stat-porpagatu/).
-
-## Repo Folders/Files
-- [Code](https://github.com/lwinter819/Capstone/tree/master/Code): 
-    - [Data_Collection](https://github.com/lwinter819/Capstone/tree/master/Code/Data_Collection): Includes all notebooks for data scraping and collection
-    - [Data Cleaning and EDA](https://github.com/lwinter819/Capstone/blob/master/Code/Data%20Cleaning%20and%20EDA.ipynb)
-    - [Modeling](https://github.com/lwinter819/Capstone/blob/master/Code/Modeling.ipynb)
-- [Data_Files](https://github.com/lwinter819/Capstone/tree/master/Data_Files): Includes the csv files for all saved datasets
 
 
 ## Executive Summary
@@ -22,7 +19,7 @@ We were able to collect data on 55,939 individual college basketball seasons. Th
 
 Before building our model, we needed to understand the dataset in greater detail. In order to do this, we performed exploratory data analysis and used Bayesian MAP estimates to adjust certain features. We wanted to see what percentage of players made an All-Star game given a certain feature as well as what percentage of All-Stars had that feature. We also looked at the continuous features (players stats) by separating the data for players that have made an All-Star game and those who have not to see if there were any significant differences between the two. Before eliminating certain features that had overlap in their calculations, we calculated Bayesian MAP estimates to adjust several values. For example, **Free Throws Made (FTM)** and **Free Throws Attempted (FTA)** are used to calculate **Free Throw % (FT %)**. We adjusted the **FT %** using prior knowledge and a likelihood function before we dropped the **FTM** and **FTA** features. This provided us with a more accurate representation and helped account for players with far fewer attempts than other players. 
 
-After completing EDA, we began the classification modeling process. We separated the data into a training and test set. The training data included players from 2008-2018 and the test set included college players from the 2019 NBA draft. We began by train/test splitting the training data after selecting features to include in the analysis. Then we began to build several classification models utilizing GridsearchCV to optimize for the best hyperparameters. Below is a list of the classification models used. 
+After completing EDA, we began the classification modeling process. We separated the data into a training and test set. The training data included players from 2008-2020 and the test set included college players from the 2020 NBA draft. We began by train/test splitting the training data after selecting features to include in the analysis. Then we began to build several classification models utilizing GridsearchCV to optimize for the best hyperparameters. Below is a list of the classification models used. 
 
 - Logistic Regression  
 - KNearest Neighbors 
