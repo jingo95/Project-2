@@ -42,7 +42,7 @@ When testing our model on unseen data, the 2019 drafted players, it predicted Zi
 
 ## Next Steps
 - Collect more data: This includes data going back further than 2008. It also includes data for new features. Some new features we'd like to include in our analysis are a players high school recruiting rank, number of wins in college and athletic measurements from the NBA combine. We'd also like to collect data on international players as well as players who were drafted straight from high school.
-- We'd like to figure out a way to quantify the mental aspects of the game. It is good to know the on-court statistics of a player, but there are other off the court aspects which can lead to success. For example, knowing a players basketball aptitude to understand their personality and behavior can be critical to finding a successful player and one that is a fit for a specific team. It would also be good to know if the player has had any run-ins with the law.
+- We'd like to figure out a way to quantify the mental aspects of the game. It is good to know the on-court statistics of a player, but there are other off the court aspects which can lead to success. For example, knowing a players basketball aptitude to understand their personality and behavior can be critical to finding a successful player and one that is a fit for a specific team.
 - In the future, we'd like to build out our analysis to predict which amateur basketball players will get drafted, their draft position and from that result find the probability that the drafted players will become All-Stars.
 
 ## Resources
